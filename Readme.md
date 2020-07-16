@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Щербаков](https://up.htmlacademy.ru/adaptive/20/user/1373593).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов] (https://up.htmlacademy.ru/htmlcss/28/user/78239).
 
 ---
 
