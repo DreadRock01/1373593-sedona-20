@@ -33,77 +33,48 @@
         достопримечательностях</p>
     </section>
 
-    <section class="section-form">
+    <section class="response">
       <h2 class="visually-hidden">Оставьте отзыв о вашей поездке</h2>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset-name">
           <legend class="form__legend">Представьтесь:</legend>
-          <p class="name-box">
-            <label class="label-name" for="name">Имя*:</label>
-            <input class="input-name" id="name" name="name" type="text" placeholder="Пётр">
-          </p>
-          <p class="name-box">
-            <label class="label-name" for="surname">Фамилия*:</label>
-            <input class="input-name" id="surname" name="surname" type="text" placeholder="Иванов">
-          </p>
-          <p class="name-box">
-            <label class="label-name" for="patronymic">Отчество*:</label>
-            <input class="input-name" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
-          </p>
+            <label class="form__label" for="name">Имя*:</label>
+            <input class="form__input-text" id="name" name="name" type="text" placeholder="Пётр">
+            <label class="form__label" for="surname">Фамилия*:</label>
+            <input class="form__input-text" id="surname" name="surname" type="text" placeholder="Иванов">
+            <label class="form__label" for="patronymic">Отчество*:</label>
+            <input class="form__input-text" id="patronymic" name="patronymic" type="text" placeholder="Александрович">
         </fieldset>
 
         <fieldset class="form__fieldset-contacts">
           <legend class="form__legend">Контактная информация:</legend>
-          <label class="label-contacts" for="tel">Контактный телефон*:</label>
-          <p class="contacts-box">
-            <input class="input-contacts" id="tel" name="tel" type="tel" placeholder="Введите телефон">
-          </p>
-          <label class="label-contacts" for="email">Электронная почта*:</label>
-          <p class="contacts-box">
-            <input class="input-contacts" id="email" name="email" type="email" placeholder="Введите e-mail">
-          </p>
+          <label class="form__label" for="tel">Контактный телефон*:</label>
+          <input class="form__input-text" id="tel" name="tel" type="tel" placeholder="Введите телефон">
+          <label class="form__label" for="email">Электронная почта*:</label>
+          <input class="form__input-text" id="email" name="email" type="email" placeholder="Введите e-mail">
         </fieldset>
 
         <fieldset class="form__fieldset-radio">
           <legend class="form__legend">Ваше общее впечатление:</legend>
-          <ul class="radio-list">
-            <li class="radio-list__item">
-              <label tabindex="0"><input type="radio" name="impression" id="good" value="good">Скорее
+              <label class="form__label" tabindex="0"><input class="form__input-radio" type="radio" name="impression" id="good" value="good">Скорее
                 положительное</label>
-            </li>
-            <li class="radio-list__item">
-              <label tabindex="0"><input type="radio" name="impression" id="bad" value="bad">Скорее
+              <label class="form__label" tabindex="0"><input class="form__input-radio" type="radio" name="impression" id="bad" value="bad">Скорее
                 отрицательное</label>
-            </li>
-            <li class="radio-list__item">
-              <label tabindex="0"><input type="radio" name="impression" id="unknown" value="unknown">Затрудняюсь
+              <label class="form__label" tabindex="0"><input class="form__input-radio" type="radio" name="impression" id="unknown" value="unknown">Затрудняюсь
                 ответить</label>
-            </li>
-          </ul>
         </fieldset>
 
         <fieldset class="form__fieldset-checkbox">
           <legend class="form__legend">Посещенные достопримечательности:</legend>
-          <ul class="checkbox-list">
-            <li class="checkbox-list__item">
-              <label tabindex="0"><input type="checkbox" name="place-bridge" id="bridge" checked>Мост Дьявола</label>
-            </li>
-            <li class="checkbox-list__item">
-              <label tabindex="0"><input type="checkbox" name="place-mountain" id="mountain"
-                  checked>Гора-Колокол</label>
-            </li>
-            <li class="checkbox-list__item">
-              <label tabindex="0"><input type="checkbox" name="place-park" id="park" checked>Слайд-парк</label>
-            </li>
-            <li class="checkbox-list__item">
-              <label tabindex="0"><input type="checkbox" name="place-rocks" id="rocks">Красные скалы</label>
-            </li>
-          </ul>
+              <label class="form__label" tabindex="0"><input class="form__input-checkbox" type="checkbox" name="place-bridge" id="bridge" checked>Мост Дьявола</label>
+              <label class="form__label" tabindex="0"><input class="form__input-checkbox" type="checkbox" name="place-mountain" id="mountain" checked>Гора-Колокол</label>
+              <label class="form__label" tabindex="0"><input class="form__input-checkbox" type="checkbox" name="place-park" id="park" checked>Слайд-парк</label>
+              <label class="form__label" tabindex="0"><input class="form__input-checkbox" type="checkbox" name="place-rocks" id="rocks">Красные скалы</label>
         </fieldset>
 
         <fieldset class="form__fieldset-textarea">
           <legend class="form__legend">Опишите свои эмоции:</legend>
-          <textarea class="feedback-textarea" name="text" id="feedback-text"
+          <textarea class="form__textarea" name="text" id="feedback-text"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
