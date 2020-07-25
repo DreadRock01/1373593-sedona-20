@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
 
-<body class="page__body">
-  <header class="page-header">
+<body class="body">
+  <header class="header">
     <nav class="nav">
-      <div class="nav__wrapper">
-        <ul class="nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-          <li class="site-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
-        </ul>
-        <a class="page-header__logo" href="index.html">
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="index.html">Главная</a></li>
+        <li class="nav-list__item"><a href="photo.html">Фото и видео</a></li>
+        <li class="nav-list__item"><a href="form.html">Форма отзыва</a></li>
+        <li class="nav-list__item"><a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a></li>
+      </ul>
+      <div class="logo-image">
+        <a class="logo-image__link" href="index.html">
           <img src="https://via.placeholder.com/101x84" width="101" height="84" alt="Седона">
         </a>
       </div>
@@ -26,69 +26,82 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="main">
     <section class="hero">
-      <img src="https://via.placeholder.com/901x389" width="901" height="389" alt="Welcome">
       <h2 class="hero__title">Cедона — небольшой городок в аризоне, заслуживающий большего!</h2>
-      <p class="hero__description">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      <p class="hero__subtitle">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
     </section>
+
     <section class="reasons">
       <div class="reasons__item">
         <h2 class="reasons__title">Настоящий городок</h2>
         <p class="reasons__number">— №1 —</p>
         <p class="reasons__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
-        <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Терраса">
-        <div class="features">
-          <div class="features__item">
-            <h2 class="features__title">Жильё</h2>
-            <p class="features__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </div>
-          <div class="features__item">
-            <h2 class="features__title">Сувениры</h2>
-            <p class="features__description">Не только китайского, но и местного производства!</p>
-          </div>
-          <div class="features__item">
-            <h2 class="features__title">Еда</h2>
-            <p class="features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </div>
+        <img src="https://via.placeholder.com/520x260" width="320" height="260" alt="Терраса">
+      </div>
+      <div class="features">
+        <div class="features__item--house">
+          <h2 class="features__title">Жильё</h2>
+          <p class="features__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </div>
-        <div class="reasons__item">
-          <h2 class="reasons__title">Там есть мост дьявола</h2>
-          <p class="reasons__number">— №2 —</p>
-          <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img src="https://via.placeholder.com/520x260" width="520" height="260" alt="Горы">
+        <div class="features__item--gift">
+          <h2 class="features__title">Сувениры</h2>
+          <p class="features__description">Не только китайского, но и местного производства!</p>
         </div>
-        <div class="reasons__item">
+        <div class="features__item--food">
+          <h2 class="features__title">Еда</h2>
+          <p class="features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+      </div>
+      <div class="reasons__item">
+        <h2 class="reasons__title">Там есть мост дьявола</h2>
+        <p class="reasons__number">— №2 —</p>
+        <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <img src="https://via.placeholder.com/520x260" width="320" height="260" alt="Горы">
+      </div>
+      <div class="reasons-others">
+        <div class="reasons-others__item">
           <h2 class="reasons__title">Небольшая площадь</h2>
-          <p class="reasonsмnumber">— №3 —</p>
+          <p class="reasons__number">— №3 —</p>
           <p class="reasons__description">Все интересные места находятся очень близко</p>
         </div>
-        <div class="reasons__item">
+        <div class="reasons-others__item">
           <h2 class="reasons__title">Красивая дорога</h2>
           <p class="reasons__number">— №4 —</p>
           <p class="reasons__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
         </div>
-        <div class="reasons__item">
+        <div class="reasons-others__item">
           <h2 class="reasons__title">Мало туристов</h2>
           <p class="reasons__number">— №5 —</p>
           <p class="reasons__description">Большинство едет в гранд каньон и толпится там</p>
         </div>
       </div>
     </section>
+    <section class="search">
+      <h2 class="search__title">Заинтересовались?</h2>
+      <p class="search__subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        седоне</p>
+      <a href="#" class="search__link">Найти гостиницу</a>
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d43871.08138189426!2d-111.65409799401243!3d35.18809128734508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1595676250342!5m2!1sru!2sru"
+        width="320" height="350" allowfullscreen title="Карта Аризоны"></iframe>
+    </section>
   </main>
 
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <p class="page-footer__hashtag">#VISITSEDONA</p>
-      <div class="page-footer__social social">
-        <a href="#" class="social__link social__link--twitter">Мы в твиттере</a>
-        <a href="#" class="social__link social__link--facebook">Мы в фейсбуке</a>
-        <a href="#" class="social__link social__link--youtube">Мы на ютубе</a>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
-      </div>
+  <footer class="footer">
+    <p class="footer__hashtag">#VISITSEDONA</p>
+    <div class="social">
+      <a href="#" class="social__link--twitter">Мы в твиттере</a>
+      <a href="#" class="social__link--facebook">Мы в фейсбуке</a>
+      <a href="#" class="social__link--youtube">Мы на ютубе</a>
+    </div>
+    <div class="copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
+          src="https://via.placeholder.com/27x34" alt="HtmlAcademy"></a>
     </div>
   </footer>
 </body>
