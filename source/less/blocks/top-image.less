@@ -4,12 +4,30 @@
   position: relative;
   justify-content: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 159px;
   margin-bottom: 32px;
+  background-color: @seagull;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 57px;
+    width: 100%;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--index {
+    background-repeat: no-repeat;
+    min-height: 390px;
+  }
 }
 
-.top-image--index {
-  min-height: 390px;
-}
