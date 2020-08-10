@@ -1,3 +1,46 @@
 .form {
   margin-bottom: 48px;
 }
+
+.form__wrapper {
+  border-top: 1px solid  @mercury;
+}
+
+.form__legend {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form__label {
+  color: @special-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.form__label-select {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.form__textarea,
+.form__input {
+  border: none;
+  resize: none;
+  color: @basic-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: @concrete;
+
+  &::placeholder {
+    color: @basic-black;
+  }
+}
+
+.form__fieldset {
+  border: none;
+}
