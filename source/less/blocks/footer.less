@@ -1,3 +1,30 @@
+.footer {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  max-width: 320px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet) {
+    padding: 36px 0;
+    max-width: 648px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 36px 120px;
+    max-width: 960px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .footer__hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -5,4 +32,8 @@
   padding-top: 29px;
   padding-bottom: 34px;
   margin: 0;
+
+  @media (min-width: @tablet) {
+    padding: 0;
+  }
 }

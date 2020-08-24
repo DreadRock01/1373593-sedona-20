@@ -1,15 +1,35 @@
 .reasons-others {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 25px 20px;
   background-color: @basic-grey;
-  margin-bottom: 33px;
-  padding: 0 26px;
-  text-align: center;
+
+  @media (min-width: @tablet) {
+    max-width: 768px;
+    display: grid;
+    height: 256px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop) {
+    max-width: 1200px;
+  }
 }
 
 .reasons-others__item {
-  padding: 26px 0 24px;
+  text-align: center;
   border-bottom: solid 1px @darkest-grey;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
 
   &:last-child {
     border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet) {
+    border-bottom: none;
+    padding: 45px;
   }
 }

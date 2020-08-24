@@ -1,10 +1,17 @@
 .search {
   margin-bottom: 49px;
+  text-align: center;
 }
 
 .search__wrapper {
   max-width: 280px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet) {
+    max-width: 458px;
+    padding: 0;
+  }
 }
 
 .search__title {
@@ -13,6 +20,11 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .search__subtitle {

@@ -1,21 +1,26 @@
+.nav {
+  position: relative;
+
+  @media (min-width: @tablet) {
+    max-width: 768px;
+    height: 56px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop) {
+    max-width: 1200px;
+    height: 56px;
+    margin: 0 auto;
+  }
+}
+
 .nav__toggle {
   position: absolute;
   right: 20px;
   bottom: 20px;
   cursor: pointer;
 
-  /* @media (min-width: 768px) {
+  @media (min-width: @tablet) {
     display: none;
-  } */
-}
-
-.nav__close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  cursor: pointer;
-
-  /* @media (min-width: 768px) {
-    display: none;
-  } */
+  }
 }
