@@ -2,11 +2,20 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: @seagull;
   font-size: 18px;
   line-height: 40px;
   font-weight: 700;
+  background-color: @seagull;
   text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: @basic-white;
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 16px;
+  }
 }
 
 .nav-list__item {
@@ -17,5 +26,19 @@
   &:last-child {
     box-shadow: none;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0) 7px);
+  }
+
+  @media (min-width: @tablet) {
+    color: @basic-black;
+    box-shadow: none;
+    width: 153px;
+
+    &:last-child {
+      background: none;
+    }
+
+    &:nth-child(2) {
+      margin-right: 140px;
+    }
   }
 }

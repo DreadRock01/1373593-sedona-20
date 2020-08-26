@@ -1,11 +1,23 @@
 .features {
   max-width: 280px;
-  margin: auto;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  padding: 25px 20px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet) {
+    max-width: 768px;
+    height: 329px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: @desktop) {
+    max-width: 1200px;
+  }
 }
 
 .features__item {
-  padding-top: 35px;
+  margin-bottom: 35px;
 }
 
 .features__title {

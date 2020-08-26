@@ -1,9 +1,23 @@
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 27px;
+  text-align: center;
   position: relative;
+  max-width: 280px;
+  margin: 0 auto;
+  padding-bottom: 38px;
+
+  @media (min-width: @tablet) {
+    max-width: 648px;
+  }
+
+  &--inside {
+    border-bottom: solid 1px @mercury;
+
+    @media (min-width: @tablet) {
+      padding: 0 170px;
+      margin-bottom: 80px;
+      border-bottom: none;
+    }
+  }
 }
 
 .hero__title {
@@ -13,12 +27,23 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet) {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+  }
 }
 
 .hero__subtitle {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: @tablet) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
