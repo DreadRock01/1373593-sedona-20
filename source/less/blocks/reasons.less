@@ -1,21 +1,13 @@
 .reasons__item {
-  max-width: 320px;
-  margin: 0 auto;
   background-color: @seagull;
 
   @media (min-width: @tablet) {
-    max-width: 768px;
-    height: 256px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 
     &--lower {
       grid-template-columns: 2fr 1fr;
     }
-  }
-
-  @media (min-width: @desktop) {
-    max-width: 1200px;
   }
 }
 
@@ -47,6 +39,7 @@
   line-height: 21px;
   font-weight: 400;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .reasons__img-wrapper {
