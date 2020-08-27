@@ -1,11 +1,7 @@
 .reasons__item {
-  max-width: 320px;
-  margin: 0 auto;
   background-color: @seagull;
 
   @media (min-width: @tablet) {
-    max-width: 768px;
-    height: 256px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 
@@ -13,16 +9,12 @@
       grid-template-columns: 2fr 1fr;
     }
   }
-
-  @media (min-width: @desktop) {
-    max-width: 1200px;
-  }
 }
 
 .reasons__info {
+  max-width: 280px;
+  margin: 0 auto;
   color: @basic-white;
-  padding: 55px 12px;
-  padding-bottom: 45px;
   text-align: center;
 }
 
@@ -47,6 +39,7 @@
   line-height: 21px;
   font-weight: 400;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .reasons__img-wrapper {
