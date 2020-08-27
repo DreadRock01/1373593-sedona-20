@@ -1,14 +1,22 @@
 .reasons-others {
-  padding: 25px 20px;
+  padding: 25px 0;
   background-color: @basic-grey;
 
   @media (min-width: @tablet) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 256px);
+    justify-content: center;
+    padding: 45px 0;
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: repeat(3, 400px);
   }
 }
 
 .reasons-others__item {
+  max-width: 280px;
+  margin: 0 auto;
   text-align: center;
   border-bottom: solid 1px @darkest-grey;
   margin-bottom: 25px;
@@ -22,6 +30,6 @@
 
   @media (min-width: @tablet) {
     border-bottom: none;
-    padding: 45px;
+    padding: 50px 32px;
   }
 }

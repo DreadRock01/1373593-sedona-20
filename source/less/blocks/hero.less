@@ -1,15 +1,32 @@
 .hero {
   text-align: center;
   position: relative;
-  padding-bottom: 38px;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet) {
+    max-width: 480px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop) {
+    max-width: 480px;
+    margin-bottom: 50px;
+  }
 
   &--inside {
-    border-bottom: solid 1px @mercury;
+    margin-bottom: 20px;
 
     @media (min-width: @tablet) {
-      padding: 0 170px;
+      max-width: 648px;
+      padding: 0;
       margin-bottom: 80px;
       border-bottom: none;
+    }
+
+    @media (min-width: @desktop) {
+      margin-bottom: 60px;
     }
   }
 }
