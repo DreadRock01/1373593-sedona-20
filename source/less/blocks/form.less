@@ -359,14 +359,14 @@ input:checked + ::after {
   }
 }
 
-.form__input--data {
+.form__input {
   &:hover {
     background-color: @mercury;
   }
 
   &:focus {
     background-color: @basic-white;
-    border: 4px solid @concrete;
+    outline: 4px solid @concrete;
   }
 }
 
@@ -381,6 +381,15 @@ input:checked + ::after {
   resize: none;
   min-height: 160px;
   padding: 10px 20px;
+
+  &:hover {
+    background-color: @mercury;
+  }
+
+  &:focus {
+    background-color: @basic-white;
+    outline: 4px solid @concrete;
+  }
 }
 
 .form__btn-wrapper {
