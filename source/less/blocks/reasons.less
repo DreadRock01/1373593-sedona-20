@@ -1,7 +1,27 @@
 .reasons__item {
+  position: relative;
   background-color: @seagull;
 
+  &--top {
+    &::before {
+      content: " ";
+      position: absolute;
+      background-size: 100%;
+      width: 100%;
+      height: 37px;
+      background-image: url("../img/bg-triangle.svg");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      top: 0;
+
+      @media (min-width: @tablet) {
+        display: none;
+      }
+    }
+  }
+
   @media (min-width: @tablet) {
+    height: 256px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 
@@ -16,6 +36,28 @@
   margin: 0 auto;
   color: @basic-white;
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 36px;
+
+  @media (max-width: 767px) {
+    &--top {
+      padding-top: 70px;
+    }
+  }
+
+  @media (min-width: @tablet) {
+    margin: initial;
+    max-width: initial;
+    padding: 40px 32px 43px;
+
+    &--lower {
+      padding: 43px 30px 40px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    padding: 47px 52px 56px 53px;
+  }
 }
 
 .reasons__title {
@@ -24,14 +66,23 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: @tablet) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .reasons__number {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  margin-top: 21px;
-  margin-bottom: 27px;
+  margin-top: 12px;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 24px;
+  }
 }
 
 .reasons__description {
@@ -52,4 +103,10 @@
 
 .reasons__img {
   display: block;
+  width: 512px;
+  height: 260px;
+
+  @media (min-width: @tablet) {
+    height: 256px;
+  }
 }
