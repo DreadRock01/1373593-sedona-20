@@ -9,9 +9,37 @@
 
 .social__link {
   display: block;
+  position: relative;
   background-color: @seagull;
   width: 46px;
   height: 48px;
   background-repeat: no-repeat;
   margin-right: 6px;
+
+  &:hover {
+    background-color: @fountain;
+  }
+
+  &:active {
+    background-color: @steel;
+  }
+}
+
+.social__icon {
+  position: absolute;
+
+  &--twitter {
+    top: 16px;
+    left: 15px;
+  }
+
+  &--facebook {
+    top: 14px;
+    left: 18px;
+  }
+
+  &--youtube {
+    top: 17px;
+    left: 13px;
+  }
 }

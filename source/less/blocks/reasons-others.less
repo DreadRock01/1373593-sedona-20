@@ -4,13 +4,13 @@
 
   @media (min-width: @tablet) {
     display: grid;
-    grid-template-columns: repeat(3, 256px);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    padding: 45px 0;
+    padding: 0;
   }
 
   @media (min-width: @desktop) {
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -21,6 +21,9 @@
   border-bottom: solid 1px @darkest-grey;
   margin-bottom: 25px;
   padding-bottom: 25px;
+  box-sizing: border-box;
+  padding-left: 12px;
+  padding-right: 12px;
 
   &:last-child {
     border-bottom: none;
@@ -29,7 +32,25 @@
   }
 
   @media (min-width: @tablet) {
+    max-width: initial;
+    margin: initial;
     border-bottom: none;
-    padding: 50px 32px;
+    padding-top: 43px;
+    padding-bottom: 40px;
+
+    &--space {
+      padding-left: 39px;
+      padding-right: 39px;
+    }
+
+    &--road {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    &--tourist {
+      padding-left: 49px;
+      padding-right: 49px;
+    }
   }
 }
