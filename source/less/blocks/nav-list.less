@@ -8,7 +8,12 @@
   background-color: @seagull;
   text-transform: uppercase;
 
+  &--closed {
+    display: none;
+  }
+
   @media (min-width: @tablet) {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: @basic-white;
@@ -16,6 +21,33 @@
     line-height: 26px;
   }
 }
+
+.nav-list__toggle {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  &--closed {
+    background-image: url("../img/icon-menu.svg");
+  }
+
+  &--nojs {
+    display: none;
+  }
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
 
 .nav-list__item {
   text-decoration: none;
@@ -25,6 +57,15 @@
   &:last-child {
     box-shadow: none;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0) 7px);
+  }
+
+  &:hover {
+    color: @seagull;
+  }
+
+  &:active {
+    color: @basic-black;
+    opacity: 0.3;
   }
 
   @media (min-width: @tablet) {
