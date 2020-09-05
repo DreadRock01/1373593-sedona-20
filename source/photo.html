@@ -23,10 +23,10 @@
         </button>
       </nav>
       <a class="header__logo" href="index.html">
-        <picture class="header__img">
+        <picture>
           <source media="(min-width: 1200px)" srcset=img/logo-sedona-desktop.svg>
           <source media="(min-width: 768px)" srcset=img/logo-sedona-tablet.svg>
-          <img src="img/logo-sedona-mobile.svg" alt="Логотип штата">
+          <img class="header__img" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип штата">
         </picture>
       </a>
     </header>
@@ -48,8 +48,11 @@
         <div class="gallery__list">
           <div class="gallery__item">
             <div class="gallery__wrapper">
-              <img class="gallery__img" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280"
-                alt="Неродные просторы">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"/>
+                <img class="gallery__img" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+              </picture>
               <div class="gallery__caption">
                 <div class="gallery__description">
                   <h3 class="gallery__title">Неродные просторы</h3>
@@ -64,8 +67,11 @@
           </div>
           <div class="gallery__item">
             <div class="gallery__wrapper">
-              <img class="gallery__img" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280"
-                alt="Местная растительность">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x"/>
+                <img class="gallery__img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
+              </picture>
               <div class="gallery__caption">
                 <div class="gallery__description">
                   <h3 class="gallery__title">Местная растительность</h3>
@@ -80,8 +86,11 @@
           </div>
           <div class="gallery__item">
             <div class="gallery__wrapper">
-              <img class="gallery__img" src="img/photo-roads-mobile@1x.jpg" width="280" height="280"
-                alt="Дорога на север">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x"/>
+                <img class="gallery__img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
+              </picture>
               <div class="gallery__caption gallery__caption--dark">
                 <div class="gallery__description">
                   <h3 class="gallery__title">Дорога на север</h3>
@@ -96,7 +105,11 @@
           </div>
           <div class="gallery__item">
             <div class="gallery__wrapper">
-              <img class="gallery__img" src="img/main-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x"/>
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x"/>
+                <img class="gallery__img" src="img/main-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
+              </picture>
               <div class="gallery__caption">
                 <div class="gallery__description">
                   <h3 class="gallery__title">Мост дьявола</h3>
@@ -116,11 +129,15 @@
         <div class="video__heading">
           <h2 class="visually-hidden">Видеопрезентация</h2>
           <h2 class="video__title">Все еще сомневаетесь?</h2>
-          <p class="video__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-            раз!</p>
+          <p class="video__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <video class="video__play" width="320" height="201" controls="controls" poster="./img/video-mobile@1x.jpg">
-        </video>
+        <div class="video__play">
+          <picture class="video__play-screen">
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x"/>
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x"/>
+            <img class="video__play-img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видеопрезентация">
+          </picture>
+        </div>
       </section>
     </main>
 
