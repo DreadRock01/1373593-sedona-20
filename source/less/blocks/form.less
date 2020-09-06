@@ -286,8 +286,12 @@
   }
 }
 
-input:checked + ::after {
+input:checked + label::after {
   opacity: 1;
+}
+
+input:focus + label::before {
+  outline: 2px solid @basic-black;
 }
 
 .form__label-radio {
