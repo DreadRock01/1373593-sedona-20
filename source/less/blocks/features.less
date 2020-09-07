@@ -14,6 +14,7 @@
   margin: 0 auto;
   margin-bottom: 27px;
   box-sizing: border-box;
+  position: relative;
   padding-left: 50px;
 
   &:last-child {
@@ -67,24 +68,88 @@
 }
 
 .features__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
+  .title;
+
   margin: 0;
   margin-bottom: 15px;
 
   @media (min-width: @tablet) {
-    font-size: 21px;
-    line-height: 26px;
     margin-bottom: 23px;
   }
 }
 
 .features__description {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-transform: uppercase;
+  .description;
   margin: 0;
+}
+
+.features__icon {
+  position: absolute;
+  left: 0;
+  fill: @seagull;
+
+  &--house {
+    width: 40px;
+    height: 37px;
+    top: -10px;
+  }
+
+  &--gift {
+    width: 32px;
+    height: 38px;
+    top: -11px;
+    left: 5px;
+  }
+
+  &--food {
+    width: 40px;
+    height: 35px;
+    top: -5px;
+  }
+
+  @media (min-width: @tablet) {
+    &--house {
+      width: 75px;
+      height: 72px;
+      top: 17%;
+      left: 35%;
+    }
+
+    &--gift {
+      width: 64px;
+      height: 75px;
+      top: 17%;
+      left: 37%;
+    }
+
+    &--food {
+      width: 76px;
+      height: 68px;
+      top: 18%;
+      left: 35%;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    &--house {
+      width: 75px;
+      height: 72px;
+      top: 17%;
+      left: 40%;
+    }
+
+    &--gift {
+      width: 64px;
+      height: 75px;
+      top: 17%;
+      left: 42%;
+    }
+
+    &--food {
+      width: 76px;
+      height: 68px;
+      top: 18%;
+      left: 40%;
+    }
+  }
 }

@@ -3,7 +3,7 @@
   flex-direction: column;
   text-align: center;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 55px;
   font-weight: 700;
   background-color: @seagull;
   text-transform: uppercase;
@@ -31,6 +31,7 @@
   height: 22px;
   border: none;
   cursor: pointer;
+  outline: none;
   background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-color: transparent;
@@ -46,6 +47,14 @@
   @media (min-width: @tablet) {
     display: none;
   }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -53,19 +62,11 @@
   text-decoration: none;
   color: @basic-white;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), 0 2px 0 rgba(255, 255, 255, 0.2);
+  .button-states;
 
   &:last-child {
     box-shadow: none;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0) 7px);
-  }
-
-  &:hover {
-    color: @seagull;
-  }
-
-  &:active {
-    color: @basic-black;
-    opacity: 0.3;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0) 7px);
   }
 
   @media (min-width: @tablet) {
@@ -80,6 +81,30 @@
 
     &:nth-child(2) {
       margin-right: 20%;
+    }
+
+    &:hover {
+      color: @seagull;
+      background-color: @basic-white;
+    }
+
+    &:active {
+      color: @basic-black;
+      opacity: 0.3;
+    }
+  }
+}
+
+.nav-list__item--active {
+  @media (min-width: @tablet) {
+    color: @pine;
+
+    &:hover {
+      color: @kabul;
+    }
+
+    &:active {
+      color: fade(@pine, 30%);
     }
   }
 }

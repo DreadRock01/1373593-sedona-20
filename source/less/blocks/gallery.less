@@ -1,6 +1,5 @@
 .gallery {
   margin: 0 auto;
-  margin-bottom: 35px;
 
   @media (min-width: @tablet) {
     max-width: 648px;
@@ -34,13 +33,15 @@
 }
 
 .gallery__title {
+  font-size: 14px;
+  text-transform: uppercase;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 2px;
 }
 
 .gallery__author {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   @media (min-width: @tablet) {
     margin: 0;
@@ -77,15 +78,16 @@
 }
 
 .gallery__caption {
+  font-size: 14px;
+  line-height: 24px;
   padding-top: 10px;
-  padding-bottom: 10px;
 
   @media (min-width: @tablet) {
     background-color: @concrete;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 15px 20px;
     max-height: 80px;
 
     &--dark {
@@ -107,4 +109,29 @@
   display: block;
   width: 100%;
   height: auto;
+}
+
+.gallery__like-case {
+  display: flex;
+  align-items: center;
+}
+
+.gallery__like-counter {
+  font-weight: 700;
+  margin-left: 14px;
+
+  @media (min-width: @tablet) {
+    margin-left: 8px;
+  }
+}
+
+.gallery__like-btn {
+  text-decoration: none;
+  opacity: 0.3;
+  fill: @basic-black;
+
+  @media (min-width: @desktop) {
+    opacity: 1;
+    fill: @basic-white;
+  }
 }

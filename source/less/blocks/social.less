@@ -1,6 +1,6 @@
 .social {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet) {
     margin: 0;
@@ -15,18 +15,16 @@
   height: 48px;
   background-repeat: no-repeat;
   margin-right: 6px;
+  .button-states;
 
-  &:hover {
-    background-color: @fountain;
-  }
-
-  &:active {
-    background-color: @steel;
+  &:active .social__icon {
+    opacity: 0.3;
   }
 }
 
 .social__icon {
   position: absolute;
+  fill: @basic-white;
 
   &--twitter {
     top: 16px;
@@ -39,7 +37,7 @@
   }
 
   &--youtube {
-    top: 17px;
+    top: 18px;
     left: 13px;
   }
 }

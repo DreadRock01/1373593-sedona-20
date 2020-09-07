@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 103px;
 }
 
 .video__heading {
@@ -14,17 +16,18 @@
   }
 }
 
+.video__play {
+  position: relative;
+}
+
 .video__play-img {
   width: 100%;
 }
 
 .video__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
+  .title;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet) {
     font-size: 30px;
@@ -39,4 +42,135 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+}
+
+.video__controls-top {
+  position: absolute;
+  max-width: 280px;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 4px;
+  left: 20px;
+
+  &::before {
+    content: "";
+    width: 235px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 22px;
+    left: 22px;
+  }
+
+  &::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: @basic-white;
+    position: absolute;
+    left: 56px;
+    top: 18px;
+  }
+
+  @media (min-width: @tablet) {
+    max-width: 648px;
+    height: 93px;
+    left: 0;
+
+    &::before {
+      content: "";
+      width: 390px;
+      height: 3px;
+      background-color: rgba(255, 255, 255, 0.2);
+      position: absolute;
+      top: 45px;
+      left: 92px;
+    }
+
+    &::after {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: @basic-white;
+      position: absolute;
+      top: 42px;
+      left: 205px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    max-width: 800px;
+  }
+}
+
+.video__controls-bottom {
+  position: absolute;
+  max-width: 280px;
+  width: 100%;
+  height: 66px;
+  background-color: @concrete;
+  top: 201px;
+  left: 20px;
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.video__button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  fill: @shuttle;
+  top: 223px;
+
+  &--replay {
+    left: 45px;
+  }
+
+  &--subtitles {
+    right: 94px;
+  }
+
+  &--fullscreen {
+    right: 43px;
+  }
+
+  &:hover {
+    fill: @special-black;
+  }
+
+  &:active {
+    fill: fade(@special-black, 30%);
+  }
+
+  @media (min-width: @tablet) {
+    fill: @basic-white;
+    top: 442px;
+
+    &--replay {
+      left: 35px;
+    }
+
+    &--subtitles {
+      right: 92px;
+    }
+
+    &--fullscreen {
+      right: 41px;
+    }
+
+    &:hover {
+      fill: fade(@basic-white, 60%);
+    }
+
+    &:active {
+      fill: fade(@basic-white, 30%);
+    }
+  }
 }

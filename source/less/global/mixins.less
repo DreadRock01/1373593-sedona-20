@@ -1,0 +1,29 @@
+.button-states () {
+  &:hover {
+    background-color: @fountain;
+  }
+
+  &:active {
+    background-color: @steel;
+    color: fade(@basic-white, 50%);
+  }
+}
+
+.title () {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.description () {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

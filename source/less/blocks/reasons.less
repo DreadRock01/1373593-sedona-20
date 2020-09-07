@@ -21,7 +21,7 @@
   }
 
   @media (min-width: @tablet) {
-    height: 256px;
+    min-height: 256px;
     display: grid;
     grid-template-columns: 1fr 2fr;
 
@@ -61,15 +61,10 @@
 }
 
 .reasons__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
+  .title;
   margin: 0;
 
   @media (min-width: @tablet) {
-    font-size: 21px;
-    line-height: 26px;
     margin-right: 23px;
     margin-left: 23px;
   }
@@ -81,9 +76,7 @@
 }
 
 .reasons__number {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
+  .description;
   margin-top: 12px;
   margin-bottom: 16px;
 
@@ -93,11 +86,8 @@
 }
 
 .reasons__description {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
+  .description;
   margin: 0;
-  text-transform: uppercase;
 }
 
 .reasons__img {
