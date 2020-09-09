@@ -59,7 +59,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -124,6 +124,10 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
+// Build
+
+const { series } = gulp;
+
 const build = gulp.series(
   clean,
   copy,
@@ -134,3 +138,8 @@ const build = gulp.series(
 );
 
 exports.build = build;
+
+exports.start = series(
+  build,
+  gulp.parallel(server, watcher)
+);
