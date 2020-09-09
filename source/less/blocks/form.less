@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     max-width: 648px;
     margin: 0 auto;
-    padding: 0 60px;
   }
 
   @media (min-width: @desktop) {
@@ -23,7 +22,6 @@
 
   @media (min-width: @tablet) {
     border: none;
-    margin-bottom: 55px;
 
     &:nth-child(2) {
       width: 100%;
@@ -31,6 +29,7 @@
 
     &:nth-child(3) {
       order: -1;
+      margin-bottom: 67px;
     }
 
     &:nth-child(4) {
@@ -50,7 +49,17 @@
 .form__wrapper {
   max-width: 280px;
   margin: 0 auto;
-  padding: 25px 0;
+  padding-top: 20px;
+  padding-bottom: 19px;
+
+  &--name {
+    padding: 24px 0;
+  }
+
+  &--contact {
+    padding-top: 20px;
+    padding-bottom: 26px;
+  }
 
   @media (min-width: @tablet) {
     max-width: 100%;
@@ -67,6 +76,18 @@
       box-sizing: border-box;
       width: 324px;
       border-right: 1px solid @altgrey;
+    }
+
+    &--contact {
+      margin-bottom: 49px;
+    }
+
+    &--checkbox {
+      margin-bottom: 40px;
+    }
+
+    &--text {
+      margin-bottom: 54px;
     }
   }
 
@@ -91,12 +112,13 @@
   }
 }
 
-.form__checkboxes {
+.form__checkbox {
   @media (min-width: @tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 auto;
+    margin-left: 96px;
+    margin-right: 91px;
     max-width: 480px;
   }
 
@@ -108,20 +130,63 @@
 }
 
 .form__legend {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
   text-align: center;
   position: relative;
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 22px;
+  .title;
+
+  &--name {
+    margin-bottom: 20px;
+  }
+
+  &--checkbox {
+    margin-bottom: 17px;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 44px;
+    }
+  }
+
+  &--contact {
+    margin-bottom: 17px;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-bottom: 73px;
+    }
+  }
+
+  &--text {
+    margin-bottom: 18px;
+  }
 
   @media (min-width: @tablet) {
-    margin-bottom: 55px;
+    &--name,
+    &--impression {
+      margin-bottom: 55px;
+      text-align: left;
+    }
+
+    &--text {
+      margin-bottom: 55px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    &--impression {
+      text-align: center;
+      margin-right: 45px;
+    }
   }
 }
 
-.form__legend--border {
+.form__legend--contact,
+.form__legend--checkbox,
+.form__legend--text {
   @media (min-width: @tablet) {
     &::before,
     &::after {
@@ -170,6 +235,7 @@
     @media (min-width: @desktop) {
       padding: 0;
       flex-shrink: 0;
+      margin-right: 18px;
     }
   }
 
@@ -191,7 +257,7 @@
 .form__input-box {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   position: relative;
 
   &:last-child {
@@ -201,6 +267,11 @@
   &--tel,
   &--mail {
     flex-wrap: wrap;
+    margin-bottom: 10px;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 24px;
+    }
 
     @media (min-width: @desktop) {
       margin-bottom: 0;
@@ -245,7 +316,6 @@
   cursor: pointer;
   margin-bottom: 13px;
   position: relative;
-  padding-left: 5px;
   user-select: none;
 
   &:last-child {
@@ -270,11 +340,11 @@
     left: 0;
     top: 0;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 22px;
   }
 
   &::after {
-    left: 22px;
+    left: 17px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -282,7 +352,7 @@
   }
 
   @media (min-width: @tablet) {
-    margin-bottom: 21px;
+    margin-bottom: 23px;
   }
 }
 
@@ -307,6 +377,18 @@ input:focus + label::before {
     background-color: @special-black;
     border-radius: 50%;
   }
+
+  @media (min-width: @tablet) {
+    &::before {
+      margin-right: 19px;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    &::before {
+      margin-right: 24px;
+    }
+  }
 }
 
 .form__label-checkbox {
@@ -315,6 +397,7 @@ input:focus + label::before {
   @media (min-width: @tablet) {
     max-width: 200px;
     width: 100%;
+    margin-bottom: 30px;
 
     &:last-child {
       margin-bottom: 25px;
@@ -335,6 +418,16 @@ input:focus + label::before {
     height: 16px;
     background-image: url("../img/icon-check.svg");
     position: absolute;
+  }
+
+  @media (min-width: @desktop) {
+    &:nth-child(2) {
+      margin-right: 19px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 14px;
+    }
   }
 }
 
@@ -395,11 +488,16 @@ input:focus + label::before {
     background-color: @basic-white;
     outline: 4px solid @concrete;
   }
+
+  @media (min-width: @tablet) {
+    padding: 19px 20px;
+  }
 }
 
 .form__btn-wrapper {
   max-width: 280px;
   margin: 0 auto;
+  margin-top: 20px;
   text-align: center;
 
   @media (min-width: @tablet) {
@@ -407,6 +505,7 @@ input:focus + label::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
     padding: 0;
     width: 100%;
   }

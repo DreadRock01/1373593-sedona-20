@@ -32,7 +32,7 @@
 }
 
 .reasons__info {
-  max-width: 280px;
+  max-width: 320px;
   margin: 0 auto;
   color: @basic-white;
   text-align: center;
@@ -56,7 +56,11 @@
   }
 
   @media (min-width: @desktop) {
-    padding: 47px 52px 56px 53px;
+    padding: 50px 57px 54px 57px;
+
+    &--lower {
+      padding: 50px 83px 54px 83px;
+    }
   }
 }
 
@@ -70,8 +74,18 @@
   }
 
   @media (min-width: @desktop) {
-    margin-left: 72px;
-    margin-right: 73px;
+    margin-left: 68px;
+    margin-right: 68px;
+
+    &--lower {
+      margin-left: 42px;
+      margin-right: 42px;
+    }
+
+    &--tourist {
+      margin-left: 72px;
+      margin-right: 72px;
+    }
   }
 }
 
@@ -135,7 +149,7 @@
     }
 
     @media (min-width: @desktop) {
-      background-position: center;
+      background-position: initial;
       background-image: url("../img/main-bridge-desktop@1x.jpg");
 
       @media (min-resolution: 2dppx) {
