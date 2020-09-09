@@ -536,3 +536,12 @@ input:focus + label::before {
     display: block;
   }
 }
+
+.form__input-invalid {
+  border: 2px solid @basic-black;
+  padding-left: 19px;
+
+  @media (min-width: 768px) {
+    padding-left: 20px;
+  }
+}
