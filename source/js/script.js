@@ -1,6 +1,6 @@
 
-let nav = document.querySelector('.nav-list');
-let menuBtn = document.querySelector('.nav-list__toggle');
+var nav = document.querySelector('.nav-list');
+var menuBtn = document.querySelector('.nav-list__toggle');
 
 nav.classList.add('nav-list--closed');
 menuBtn.classList.remove('nav-list__toggle--nojs');
