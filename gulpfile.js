@@ -26,6 +26,7 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/*.ico",
+    "source/js/**",
     "source/*.html"
     ], {
         base: "source"
@@ -45,6 +46,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
