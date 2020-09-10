@@ -1,10 +1,10 @@
-let form = document.querySelector(".form");
-let failure = document.querySelector(".modal--failure");
-let success = document.querySelector(".modal--success");
-let inputs = form.querySelectorAll("input");
-let submit = form.querySelector(".form__link");
-let failureClose = failure.querySelector(".modal__failure-btn");
-let successClose = success.querySelector(".modal__success-btn");
+var form = document.querySelector(".form");
+var failure = document.querySelector(".modal--failure");
+var success = document.querySelector(".modal--success");
+var inputs = form.querySelectorAll("input");
+var submit = form.querySelector(".form__link");
+var failureClose = failure.querySelector(".modal__failure-btn");
+var successClose = success.querySelector(".modal__success-btn");
 
 submit.addEventListener('click', function (evt) {
 
