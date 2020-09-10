@@ -6,6 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
+const uglify = require("gulp-uglify");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webP = require("gulp-webp");
@@ -24,7 +25,6 @@ exports.clean = clean;
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**",
     "source/*.ico",
     "source/*.html"
     ], {
@@ -124,6 +124,18 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
+// Jsmin
+
+const jsmin = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/js"));
+};
+
+exports.jsmin = jsmin;
+
 // Build
 
 const { series } = gulp;
@@ -133,6 +145,7 @@ const build = gulp.series(
   copy,
   images,
   webp,
+  jsmin,
   styles,
   sprite
 );
