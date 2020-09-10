@@ -81,6 +81,16 @@
 .features__description {
   .description;
   margin: 0;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: @desktop) {
+    br {
+      display: initial;
+    }
+  }
 }
 
 .features__icon {
@@ -111,7 +121,7 @@
     &--house {
       width: 75px;
       height: 72px;
-      top: 17%;
+      top: 18%;
       left: 35%;
     }
 
@@ -125,7 +135,7 @@
     &--food {
       width: 76px;
       height: 68px;
-      top: 18%;
+      top: 19%;
       left: 35%;
     }
   }

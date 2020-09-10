@@ -5,6 +5,11 @@
 
   @media (min-width: @tablet) {
     padding-top: 57px;
+    padding-bottom: 59px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-bottom: 68px;
   }
 }
 
@@ -29,6 +34,7 @@
   @media (min-width: @tablet) {
     font-size: 30px;
     line-height: 26px;
+    margin-bottom: 33px;
   }
 }
 
@@ -38,4 +44,20 @@
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 27px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: @tablet) {
+    margin-bottom: 38px;
+
+    br {
+      display: initial;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 42px;
+  }
 }

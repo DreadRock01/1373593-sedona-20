@@ -27,7 +27,8 @@
 
   @media (min-width: @desktop) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    margin-bottom: 55px;
+    min-height: 301px;
+    margin-bottom: 100px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -63,6 +64,23 @@
     @media (min-width: @tablet) {
       min-height: 518px;
       margin-bottom: 45px;
+    }
+
+    @media (min-width: @desktop) {
+      min-height: 518px;
+      margin-bottom: 52px;
+    }
+  }
+
+  &--form {
+    margin-bottom: 38px;
+
+    @media (min-width: @tablet) {
+      margin-bottom: 63px;
+    }
+
+    @media (min-width: @desktop) {
+      margin-bottom: 114px;
     }
   }
 }
