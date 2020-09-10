@@ -60,7 +60,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -113,7 +113,7 @@ const sprite = () => {
     .pipe(imagemin([
       imagemin.svgo({
         plugins: [
-          { removeAttrs: { attrs: 'fill' } },
+          { removeAttrs: { attrs: "fill" } },
           { removeViewBox: false }
         ]
       })

@@ -108,6 +108,7 @@
 .form__contact {
   @media (min-width: @desktop) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -123,7 +124,7 @@
   }
 
   @media (min-width: @desktop) {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 0;
     max-width: 960px;
   }
@@ -442,6 +443,7 @@ input:focus + label::before {
   border: none;
   box-sizing: border-box;
   cursor: pointer;
+  font-family: inherit;
   color: @basic-black;
   font-size: 18px;
   line-height: 26px;
@@ -452,7 +454,6 @@ input:focus + label::before {
   padding-left: 21px;
 
   &::placeholder {
-    font-family: "PT Sans", "Arial", sans-serif;
     color: @basic-black;
     opacity: 1;
   }
