@@ -3,13 +3,13 @@
 
   @media (min-width: @tablet) {
     max-width: 648px;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: @desktop) {
     max-width: 1200px;
     padding: 0;
-    margin-bottom: 65px;
+    margin-bottom: 61px;
   }
 }
 
@@ -42,15 +42,20 @@
 .gallery__author {
   margin: 0;
   margin-bottom: 10px;
+  color: @special-black;
 
   @media (min-width: @tablet) {
     margin: 0;
+  }
+
+  @media (min-width: @desktop) {
+    color: @basic-white;
   }
 }
 
 .gallery__item {
   border-bottom: solid 1px @mercury;
-  padding: 22px 20px 15px 20px;
+  padding: 21px 20px 15px 20px;
 
   &:first-child {
     border-top: solid 1px @mercury;

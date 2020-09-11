@@ -1,11 +1,10 @@
+var navList = document.querySelector(".nav-list");
+var menuBtn = document.querySelector(".nav__toggle");
 
-var nav = document.querySelector('.nav-list');
-var menuBtn = document.querySelector('.nav-list__toggle');
+navList.classList.add("nav-list--closed");
+menuBtn.classList.remove("nav__toggle--nojs");
 
-nav.classList.add('nav-list--closed');
-menuBtn.classList.remove('nav-list__toggle--nojs');
-
-menuBtn.addEventListener('click', function () {
-  menuBtn.classList.toggle('nav-list__toggle--closed');
-  nav.classList.toggle('nav-list--closed');
+menuBtn.addEventListener("click", function () {
+  menuBtn.classList.toggle("nav__toggle--closed");
+  navList.classList.toggle("nav-list--closed");
 });

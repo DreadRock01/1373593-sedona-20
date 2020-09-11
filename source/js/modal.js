@@ -6,7 +6,7 @@ var submit = form.querySelector(".form__link");
 var failureClose = failure.querySelector(".modal__failure-btn");
 var successClose = success.querySelector(".modal__success-btn");
 
-submit.addEventListener('click', function (evt) {
+submit.addEventListener("click", function (evt) {
 
   for (var i = 0; i < inputs.length; i++) {
 

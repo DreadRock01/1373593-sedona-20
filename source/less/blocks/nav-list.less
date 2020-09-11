@@ -3,7 +3,7 @@
   flex-direction: column;
   text-align: center;
   font-size: 18px;
-  line-height: 55px;
+  line-height: 40px;
   font-weight: 700;
   background-color: @seagull;
   text-transform: uppercase;
@@ -22,45 +22,11 @@
   }
 }
 
-.nav-list__toggle {
-  position: absolute;
-  right: 20px;
-  top: 17px;
-  z-index: 2;
-  width: 22px;
-  height: 22px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  background-image: url("../img/icon-cross.svg");
-  background-repeat: no-repeat;
-  background-color: transparent;
-
-  &--closed {
-    background-image: url("../img/icon-menu.svg");
-  }
-
-  &--nojs {
-    display: none;
-  }
-
-  @media (min-width: @tablet) {
-    display: none;
-  }
-
-  &:hover {
-    opacity: 0.5;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-
 .nav-list__item {
   text-decoration: none;
   color: @basic-white;
+  padding-top: 8px;
+  padding-bottom: 8px;
   box-shadow: 0 1px 0 0 rgba(1, 1, 1, 0.2), 0 2px 0 rgba(255, 255, 255, 0.2);
   .button-states;
 
