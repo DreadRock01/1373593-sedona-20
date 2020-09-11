@@ -8,7 +8,6 @@
   background-size: cover;
   background-position: 50% bottom;
   min-height: 158px;
-  margin-bottom: 25px;
   background-color: @seagull;
 
   @media (min-resolution: 2dppx) {
@@ -18,7 +17,6 @@
   @media (min-width: @tablet) {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     min-height: 290px;
-    margin-bottom: 63px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -28,27 +26,9 @@
   @media (min-width: @desktop) {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     min-height: 301px;
-    margin-bottom: 100px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-    }
-  }
-
-  .top-image__logo {
-    padding-top: 9px;
-
-    @media (min-width: @tablet) {
-      padding: 0;
-      padding-bottom: 10px;
-    }
-
-    &--inside {
-      padding: 0;
-
-      @media (min-width: @tablet) {
-        padding-bottom: 15px;
-      }
     }
   }
 
@@ -74,31 +54,23 @@
     }
   }
 
-  &--index {
-    background-position: center;
-    min-height: 389px;
-    margin-bottom: 33px;
-
-    @media (min-width: @tablet) {
-      min-height: 518px;
-      margin-bottom: 45px;
-    }
-
-    @media (min-width: @desktop) {
-      min-height: 518px;
-      margin-bottom: 55px;
+  &--inside {
+    @media (max-width: @mobile) {
+      background-size: 768px 389px;
+      background-position: bottom;
     }
   }
 
-  &--form {
-    margin-bottom: 38px;
+  &--index {
+    background-position: center;
+    min-height: 389px;
 
     @media (min-width: @tablet) {
-      margin-bottom: 63px;
+      min-height: 518px;
     }
 
     @media (min-width: @desktop) {
-      margin-bottom: 114px;
+      min-height: 518px;
     }
   }
 }
@@ -106,5 +78,23 @@
 .top-image__title {
   @media (min-width: @tablet) {
     width: 460px;
+  }
+}
+
+.top-image__logo {
+  padding-top: 9px;
+
+  @media (min-width: @tablet) {
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  &--inside {
+    padding: 0;
+    padding-bottom: 10px;
+
+    @media (min-width: @tablet) {
+      padding-bottom: 15px;
+    }
   }
 }

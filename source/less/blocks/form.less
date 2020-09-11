@@ -44,6 +44,13 @@
   &--text {
     border-bottom: none;
   }
+
+  @media (min-width: @desktop) {
+    &:nth-child(3) {
+      order: -1;
+      margin-bottom: 65px;
+    }
+  }
 }
 
 .form__wrapper {
@@ -53,11 +60,11 @@
   padding-bottom: 19px;
 
   &--name {
-    padding: 24px 0;
+    padding: 20px 0;
   }
 
   &--contact {
-    padding-top: 20px;
+    padding-top: 24px;
     padding-bottom: 26px;
   }
 
@@ -101,6 +108,18 @@
     &--radio {
       box-sizing: border-box;
       width: 480px;
+    }
+
+    &--contact {
+      margin-bottom: 50px;
+    }
+
+    &--checkbox {
+      margin-bottom: 38px;
+    }
+
+    &--text {
+      margin-bottom: 56px;
     }
   }
 }
@@ -178,6 +197,10 @@
   }
 
   @media (min-width: @desktop) {
+    &--text {
+      margin-bottom: 54px;
+    }
+
     &--impression {
       text-align: center;
       margin-right: 45px;
@@ -236,6 +259,7 @@
     @media (min-width: @desktop) {
       padding: 0;
       flex-shrink: 0;
+      margin-bottom: 0;
       margin-right: 18px;
     }
   }
@@ -499,7 +523,7 @@ input:focus + label::before {
 .form__btn-wrapper {
   max-width: 280px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 26px;
   text-align: center;
 
   @media (min-width: @tablet) {
@@ -520,10 +544,14 @@ input:focus + label::before {
 .form__link {
   @media (min-width: @tablet) {
     width: 324px;
+    padding: 0;
+    padding-top: 6px;
+    padding-right: 11px;
   }
 
   @media (min-width: @desktop) {
     width: 480px;
+    padding: 0;
   }
 }
 
@@ -531,6 +559,7 @@ input:focus + label::before {
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  padding-top: 7px;
   display: none;
 
   @media (min-width: @tablet) {
